@@ -1,34 +1,56 @@
 # Machine Learning Exoplanet Search
 
 ## Summary: 
-NASA Kepler space telescope has been searching for hidden planets outside of our solar system. This challenge's task was to create machine learning models capable of classifying candidate exoplanets from the raw NASA Kepler dataset. The data was first explored, cleaned and pre-processed and hyperparameter tuned so it was ready to be ran through 4 models: Logistic Regression, Random Forests, K Nearest Neighbors and Support Vector Machine Classifier. The best model turned out to be Random Forest Classifier with a score of 0.87. [Jupyter Notebook](https://nbviewer.jupyter.org/github/kasiakalemba/Machine-Learning-Basic-Skills/blob/master/model_1.ipynb)
+A project aimed to compare different machine learning models in classifying planets outside our solar system. 
 
 
-![](images/summary.png)
+![](images/exoplanets.jpg)
 
-https://www.kaggle.com/nasa/kepler-exoplanet-search-results
+## Desciption
+NASA Kepler space telescope has been searching for hidden planets outside of our solar system. This challenge's task was to create machine learning models capable of classifying candidate exoplanets from the raw NASA Kepler dataset. The data was first explored, cleaned and pre-processed and hyperparameter tuned so it was ready to be ran through 4 models: Logistic Regression, Random Forests, K Nearest Neighbors and Support Vector Machine Classifier. The best model turned out to be Random Forest Classifier with a score of 0.87. [Jupyter Notebook](https://nbviewer.jupyter.org/github/kasiakalemba/Machine-Learning-Basic-Skills/blob/master/exoplanet_models.ipynb)
 
-## Skills Displayed: 
-* Calculating and applying regression analysis to datasets
-* Understanding the difference between linear and non-linear data 
-* Quantifying and validate linear models
-* Applying scaling and normalization as part of the data preprocessing step in machine learning
-* Calculating and applying the fundamental classification algorithms: logistic regression, SVM, KNN, decision trees, and random forests.
-* Quantifying and validating classification models including calculating a classification report
-* Applying `GridSearchCV` to hyper tune model parameters
-* Understanding unsupervised learning and how to apply the kmeans algorithm
+## Technologies 
+* Python
+* Pandas
+* Jupyter Notebook
+* sci-kit learn
+
+## Development 
+### Data cleaning and pre-processing
+1. Data exoplanets on was imported from the following set: https://www.kaggle.com/nasa/kepler-exoplanet-search-results
+  * There were no missing values in the data 
+  * Only one column was an object, the rest were all numerical values 
+  * Features were selected based on their feature importance 
+  * A test-train split was created for the dataset
+  * Lastly data was scaled using StandardScaler
+
 ![](images/prep.png)
 
-## Taks:
-* Preprocessed the dataset prior to fitting the model
-* Performed feature selection and remove unnecessary features
-* Used MinMaxScaler to scale the numerical data
-* Separated the data into training and testing data
-* Tuned Model Parameters
-* Used GridSearch to tune model parameters.
-* Tuned and compare at least two different classifiers.
+  
+### Machine Learning Models 
+1. Logistic Regression: often used when data is categorical was a good starting point for the datset. It's testing data score was 0.743.
+![](images/logistic.png)
 
-![](exoplanets.jpg)
+2. Support Vector Machine (SVM) model returned a score of 0.714
+![](images/svm.png)
+
+3. Random Forest Model consists of a large number of decision tres. For this dataset it gave a value of 0.879. 
+![](images/rf.png)
+
+4. K Nearest Neighbor (KNN) model assumes that if things are in proximity they should be similar to each other. In this case the final score was 0.865. 
+![](images/knn.png)
+
+#### Final Table 
+![](images/summary.png)
+
+
+
+
+
+
+
+
+
 
 
 

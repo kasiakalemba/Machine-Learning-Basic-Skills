@@ -2,6 +2,8 @@
 
 ## Summary: 
 A project aimed to compare different machine learning models in classifying planets outside our solar system. 
+
+
 ![](images/exoplanets.jpg)
 
 ## Desciption

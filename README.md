@@ -2,6 +2,7 @@
 
 ## Summary: 
 A project aimed to compare different machine learning models in classifying planets outside our solar system. 
+![](images/exoplanets.jpeg)
 
 ## Desciption
 NASA Kepler space telescope has been searching for hidden planets outside of our solar system. This challenge's task was to create machine learning models capable of classifying candidate exoplanets from the raw NASA Kepler dataset. The data was first explored, cleaned and pre-processed and hyperparameter tuned so it was ready to be ran through 4 models: Logistic Regression, Random Forests, K Nearest Neighbors and Support Vector Machine Classifier. The best model turned out to be Random Forest Classifier with a score of 0.87. [Jupyter Notebook](https://nbviewer.jupyter.org/github/kasiakalemba/Machine-Learning-Basic-Skills/blob/master/exoplanet_models.ipynb)
